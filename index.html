@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McStat</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav-title">
+            <li>McStat</li>
+        </ul>
+    </nav>
+    <hr class="nav-hr">
+
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="input-server" placeholder="Server IP">
+            <button id="submit-server" onclick="getServerStat()">Check</button>
+        </div>
+    </div>
+
+<!-- ...existing code... -->
+<div class="server-info-container hidden" id="server-info-container">
+    <h2>Server Info</h2>
+    <table class="server-info-table">
+        <tr>
+            <th>Server Address</th>
+            <td id="server-address">-</td>
+        </tr>
+        <tr>
+            <th>Server Status</th>
+            <td id="server-status">-</td>
+        </tr>
+        <tr>
+            <th>SRV Record</th>
+            <td id="server-ip">-</td>
+        </tr>
+        <tr>
+            <th>Server Version</th>
+            <td id="server-version">-</td>
+        </tr>
+        <tr>
+            <th>Online Players</th>
+            <td id="server-online">-</td>
+        </tr>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</div>
+
+</body>
+</html>

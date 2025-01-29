@@ -1,0 +1,82 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+.nav-title {
+    display: flex;
+    justify-content: left;
+    font-weight: 700;
+    list-style: none;
+}
+
+.nav-hr {
+    border: 0;
+    height: 1px;
+    width: 80%;
+    background-color: rgb(81, 82, 82);
+}
+
+html {
+    background-color: rgb(48, 48, 48);
+    color: rgb(247, 243, 243);
+    font: 400 16px 'Pretendard', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-top: 20px;;
+}
+
+#input-server {
+    border: none;
+    outline: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: rgb(68, 65, 65);
+}
+
+.input-container:hover{
+    transform: scale(1.05);
+}
+
+#submit-server{
+    border: none;
+    border-radius: 0 0 0.5rem 0;
+    width: 40%;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(68, 65, 65);
+    transition: all 0.8s ease;
+    color: white;
+}
+
+.server-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(68, 65, 65);
+    width: 90%;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: 5rem
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    color: white;
+}
