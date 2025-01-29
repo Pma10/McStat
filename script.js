@@ -26,6 +26,8 @@ function getServerStat() {
             document.getElementById("server-version").innerHTML = response.data.version.name;
             document.getElementById("server-ip").innerHTML = 
                 `${response.data.srv.host}:${response.data.srv.port}`;
+            document.getElementById("server-motd").innerHTML = response.data.motd;
+            document.getElementById("server-ping").innerHTML = response.data.ping;
         } else {
             document.getElementById("server-info-container").classList.add("hidden");
             alert("Server is not online or the address is invalid");
